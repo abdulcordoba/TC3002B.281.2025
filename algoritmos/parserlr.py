@@ -111,7 +111,7 @@ class Grammarn(GrammarLR):
 
 
 if __name__ == '__main__':
-    #Grammar1().parse('x+y*x*y')
+    Grammar1().parse('x+y*x*y')
     #Grammar2().parse('a')
     #Grammar3().parse('((a),a,(a,a))')
-    Grammarn().parse('((a),a,(a,a))')
+    #Grammarn().parse('((a),a,(a,a))')

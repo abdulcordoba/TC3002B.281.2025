@@ -97,6 +97,15 @@ T -> F
 F -> ( E )
 F -> a
 
+La gramática 4 es:
+
+E -> E + T
+T -> n
+
+E -> T Ep
+Ep -> +T Ep
+Ep -> ε
+T -> n
 
 '''
 class GrammarLL:
@@ -122,16 +131,14 @@ class Grammar4(GrammarLL):
     def __init__(self):
         super().__init__('table_ll_4.csv')
 
-class Grammarn(GrammarLL):
-    def __init__(self):
-        super().__init__(path=r"C:\Users\jcordoba\Downloads\tarea3.1\rosetefloresrodrigoaldahir_115216_179225432_Actividad 3.2. Gramáticas libres de contexto\Actividad 3.2. Gram ticas libres de contexto", table="table_ll_4.csv")
+
 
 
 if __name__ == '__main__':
     #Grammar1().parse('((a+a)+a)')
     #Grammar2().parse('(())()')
     #Grammar3().parse('i+i*i')
-    #Grammar4().parse('i(0)i(1)oeo')
-    Grammarn().parse('i(0)i(1)oeo')
+    Grammar4().parse('n+n+n')
+    #Grammarn().parse('i(0)i(1)oeo')
 
 
