@@ -101,14 +101,6 @@ class Grammar2(GrammarLR):
     def __init__(self):
         super().__init__('table_lr_2.csv', 'grammar_2.csv')
 
-class Grammar3(GrammarLR):
-    def __init__(self):
-        super().__init__('table_lr_3.csv.bak', 'grammar_3.csv.bak')
-
-class Grammarn(GrammarLR):
-    def __init__(self):
-        super().__init__('table_lr_3.csv', 'grammar_3.csv', r"C:\Users\jcordoba\Downloads\tarea3.1\rosetefloresrodrigoaldahir_115216_179225432_Actividad 3.2. Gramáticas libres de contexto\Actividad 3.2. Gram ticas libres de contexto\\")
-
 
 if __name__ == '__main__':
     Grammar1().parse('x+y*x*y')
