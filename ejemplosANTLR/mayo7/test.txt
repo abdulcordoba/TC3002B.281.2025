@@ -1,3 +1,4 @@
-repite 5+3:
- a = a + 1
-_
+entero fun( entero x, cadena y) {
+    repite 0 : 0 _
+    fun(4, 5*5)
+}
